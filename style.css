@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto", serif;
+}
+
+
+.container {
+    display: flex;
+    width: inherit;
+    height: inherit;
+}
+
+.layout-header {
+    background-image: url(assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    flex: 0 1 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    background-color: rgb(0,0,0,60%);
+    color: white;
+    font-weight: 900;
+    font-size: 78px;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+}
+
+.layout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-color: rgb(131, 167, 110, 15%);
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    padding: 120px 0px;
+
+}
+
+.form-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 32px 64px;
+    gap: 20px
+}
+
+.form-header {
+    font-size: 24px;
+    padding: 18px 0px;
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 8px 32px;
+}
+
+.form-container label {
+    font-size: 14px;
+}
+
+.form-container input {
+    font-size: 14px;
+    padding: 6px;
+    width: 360px;
+    border-radius: 6px;
+    border: 2px solid #E5E7EB;
+}
+
+.form-container input:invalid {
+    outline: 1px solid red;
+}
+
+.form-container input:focus {
+    outline: 1px solid blue;
+    box-shadow: none;
+}
+
+.form-container button {
+    padding: 12px 20px;
+    background-color: rgb(131, 167, 110);
+    border: 0px solid lightgray;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    width: 214px;
+}
+
+.form-footer {
+    padding: 18px 0px;
+}
